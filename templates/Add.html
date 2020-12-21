@@ -1,0 +1,29 @@
+<head>
+    <title>Add </title>
+    <style>
+        body {
+  background-image: url('https://st3.depositphotos.com/4529701/17498/i/1600/depositphotos_174983144-stock-photo-rasgulla-sweet-food.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+    </style>
+    </head>
+    
+    <body>
+    <h1>Add The Data </h1>
+    <form action="" method="GET">
+        {%csrf_token%}
+        Person Name: <input type="text" name="pn"/><br/>
+        Sweet Name: <input type="text" name="sn"/><br/>
+        
+        Number of items<input type="number" name="num"/><br/><br/><br/>
+        
+        <input id="3" type="submit" value="Add"/><br>
+        <a class="nav-link active" href="{% url 'home' %}"><button id ="4" type="button" style="color: rgb(3, 7, 8); background-color:thistle;">back</button></a>
+      
+    </form>
+    </body>
+    
+</html>
+    
